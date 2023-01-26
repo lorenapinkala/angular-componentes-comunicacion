@@ -1,4 +1,6 @@
-# Comunicacion
+# Comunicacion de componentes
+
+practica de la comunicacion entre componentes padres hacia componentes hijos y de componentes hijos hacia componentes padres.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
 
