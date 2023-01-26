@@ -1,0 +1,33 @@
+<div class="hijo">
+    <h4>Este mensaje es desde el hijo</h4>
+    <ol>
+        <li *ngFor="let estudiante of estudiantesHijo">
+            <p>Nombre: {{estudiante.nombre}}</p>
+            <p>Curso: {{estudiante.curso}}</p>
+            <p>Esta activo: {{estudiante.activo}}</p>
+            <p>Nota media: {{estudiante.notaMedia}}</p>
+        </li>
+    </ol>
+
+    <div class="formulario">
+        <div class="row">
+            <div class="col">
+                <input type="text" placeholder="nombre" [(ngModel)]="nombre">
+            </div>
+            <div class="col">
+                <input type="text" placeholder="curso" [(ngModel)]="curso">
+            </div>
+            <div class="col">
+                <input type="checkbox" placeholder="activo" [(ngModel)]="activo">
+            </div>
+            <div class="col">
+                <input type="number" placeholder="nota Media" [(ngModel)]="notaMedia">
+            </div>
+        </div>
+
+        <div class="row">
+            <button (click)="agregarEstudiante()">Agregar estudiante</button>
+        </div>
+
+    </div>
+</div>
